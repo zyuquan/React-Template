@@ -59,7 +59,11 @@ class App extends React.Component {
       currentLocale,
       locales: {
         [currentLocale]: locales[currentLocale]
-      }
+      },
+      commonLocaleDataUrls: {
+        'zh': false,
+        'en': false
+      },
     }).then(() => {
       this.setState({
         initDone: true,
