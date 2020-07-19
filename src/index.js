@@ -50,7 +50,6 @@ class App extends React.Component {
   }
 
   loadLocales () {
-    console.log(123)
     let currentLocale = intl.determineLocale({
       urlLocaleKey: "lang",
       cookieLocaleKey: "lang"

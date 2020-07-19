@@ -11,7 +11,6 @@ export default class Routes extends React.Component {
         const routes = [];
         for (let i = 0; i < list.length; i++) {
             let { component, path, redirect, exact, auth, children, datas } = list[i];
-            console.log(list[i])
             const Component = component;
             const index = key+i;
             if (auth && !auth.includes(auths)) {

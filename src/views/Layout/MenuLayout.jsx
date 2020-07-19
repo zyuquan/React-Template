@@ -6,7 +6,6 @@ export default class MenuLayout extends React.Component {
     }
 
     render () {
-        console.log(this.props.datas)
         return <div>
             {this.props.children}
         </div>
