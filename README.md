@@ -1,6 +1,6 @@
 ### 下载此项目
 ```
-git clone
+git clone https://github.com/zyuquan/React-Template.git
 ```
 ### 安装依赖
 ```
