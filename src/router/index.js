@@ -21,16 +21,16 @@ export default class Routes extends React.Component {
             } else if (!path && Component) {
                 routes.push(<Component key={index} datas={datas} exact={exact}>
                     {
-                        children ? this.renderChildern(children, index) : null
+                        children ? this.renderChildern(children, auths, index) : null
                     }
                 </Component>)
             } else if (!path && !Component && children) {
-                routes.push(...this.renderChildern(children, index))
+                routes.push(...this.renderChildern(children, auths, index))
             } else {
                 routes.push(<Route key={index} path={path} exact={exact} render={(props)=>(
                     <Component datas={datas} {...props}>
                         {
-                            children ? this.renderChildern(children, index) : null
+                            children ? this.renderChildern(children, auths, index) : null
                         } 
                     </Component>
                     )
